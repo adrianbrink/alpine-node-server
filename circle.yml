@@ -16,3 +16,4 @@ deployment:
     branch: master
     commands:
       - docker login -u adrianbrink -p $DOCKER_PASSWORD
+      - docker tag alpine-node-server_web adrianbrink/alpine-node-server
