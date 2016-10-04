@@ -11,3 +11,8 @@ dependencies:
 test:
   override:
     - docker-compose up -d
+deployment:
+  master:
+    branch: master
+    commands:
+      - docker login -u adrianbrink -p $DOCKER_PASSWORD
