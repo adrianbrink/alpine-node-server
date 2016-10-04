@@ -4,3 +4,6 @@ machine:
   dependencies:
     override:
       - docker-compose build
+  test:
+    override:
+      - docker-compose up -d
